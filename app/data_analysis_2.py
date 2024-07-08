@@ -1,6 +1,6 @@
 import os
 import sys
-import utils.prints_custom as prints_custom
+from utils.prints_custom import *
 lista_caminho = ['s3:\\bucketA\pasta1\objeto9','s3:\\bucketA\pasta2\objeto8','s3:\\bucketB\pasta3\objeto7','s3:\\bucketB\pasta4\objeto6','s3:\\bucketC\pasta5\objeto7']
 
 lista_buckets = []
@@ -22,7 +22,7 @@ lista_buckets.sort(reverse=True)
 lista_pastas.sort()
 lista_objetos.sort(reverse=True)
 
-prints_custom.print_tamanho(lista_buckets,'Buckets')
+print_tamanho(lista_buckets,'Buckets')
 
 # print (f'Quantidade de Buckets: {len(lista_buckets)}')
 print (f'Lista dos Buckets:  {(lista_buckets)}')
