@@ -23,10 +23,10 @@ lista_pastas.sort()
 lista_objetos.sort(reverse=True)
 
 print_tamanho(lista_buckets,'Buckets')
+print_lista(lista_buckets)
 
-# print (f'Quantidade de Buckets: {len(lista_buckets)}')
-print (f'Lista dos Buckets:  {(lista_buckets)}')
-print (f'Quantidade de Pastas: {len(lista_pastas)}')
-print (f'Lista das Pastas: {lista_pastas}')
-print (f'Quantidade de Objetos: {len(lista_objetos)}')
-print (f'Lista de Objetos: {lista_objetos}')
+print_tamanho(lista_pastas,'Pastas')
+print_lista(lista_pastas)
+
+print_tamanho(lista_objetos,'Objetos')
+print_lista(lista_objetos)
